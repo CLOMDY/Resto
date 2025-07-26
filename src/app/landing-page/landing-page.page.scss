@@ -1,0 +1,131 @@
+ion-content::part(background) {
+  background: #ebebeb;
+}
+
+.hr {
+  border-bottom: 1px solid #000000;
+  margin: 10px;
+}
+
+.topDiv {
+  background-color: rgb(195, 195, 195);
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+button {
+  height: 36px;
+  width: 78px;
+  border-radius: 10px;
+  background-color: #ff4961;
+  font-size: 17px;
+}
+
+.lorem {
+  background: linear-gradient(0deg, #746262 0%, white 70% );
+  border: #564343 solid 2px;
+  height: 300px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.ourView {
+  padding: 10px;
+  background: linear-gradient(0deg, #746262 0%, white 70%);
+  border: #564343 solid 2px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0px 5px 10px 5px;
+  max-width: 355px;
+  font-family: 'Kenia', sans-serif;
+}
+
+.knowYourChef {
+  background: linear-gradient(0deg, #746262 0%, white 70% );
+  border: #564343 solid 2px;
+  height: 67px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 15px;
+  font-family: 'Kenia', sans-serif;
+}
+
+.chef {
+  background: linear-gradient(0deg, #746262 0%, white 70%);
+  background-color: white;
+  border: #564343 solid 2px;
+  height: 180px;
+  width: 169px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chefInfo {
+  background: linear-gradient(0deg, #746262 0%, white 70%);
+  border: #564343 solid 2px;
+  height: 180px;
+  width: 169px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.return {
+  background: linear-gradient(0deg, #746262 0%, white 70%);
+  background-color: white;
+  border: #564343 solid 2px;
+  height: 100px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 62px;
+}
+
+.popular {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.popularDishName {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Kenia', sans-serif;
+  font-weight: bolder;
+  text-shadow: 0px 0px 10px #000000;
+  color: white;
+}
+
+.slideCss {
+  border-radius: 10px;
+  aspect-ratio: 2;
+}
+
+
+.name {
+  position: relative;
+  top: -117px;
+  max-height: 0px;
+}
+
+.ourView,
+.knowYourChef,
+.chef,
+.chefInfo,
+.return {
+  color: #000; /* force black text for readability */
+}

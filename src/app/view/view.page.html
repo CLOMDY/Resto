@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <div style="background-color: rgb(215, 213, 213);">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <div style="font-size: larger; font-weight: bolder; padding-left: 10px;padding-top: 11px;">
+            Popular Dishes
+          </div>
+        </ion-col>
+        <ion-col size="2">
+          <img src="../../assets/OIG.jpeg" style="border-radius: 1000px; height: 45px;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <ion-searchbar style="background-color: white; border-radius: 20px; margin: 10px; max-height: 50px; max-width: 355px;"></ion-searchbar>
+  <span style="font-size: 14px; padding-left: 35px;">Veg</span><ion-toggle aria-label="Enable Notifications" class="toggle-checked1"></ion-toggle>
+  <span style="font-size: 14px;">Non-Veg</span><ion-toggle aria-label="Enable Notifications" class="toggle-checked2" style="padding-right: 25px;"></ion-toggle>
+  <button class="btn default">Bestseller</button>
+  <div class="hr"> </div>
+  <app-slider3 [alldata]="allpopularData"></app-slider3>
+</ion-content>

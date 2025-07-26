@@ -1,0 +1,84 @@
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <div class = "login">
+    Sign-in
+  </div>
+  <div style="height: 550px;">
+    <div style="justify-content: center; display: flex; align-items: center;">
+      <form style="max-width: 300px;" #form = "ngForm">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="full">
+                <ion-label position="floating">First Name</ion-label>
+                <ion-input type="text" required="required" name="signin_firstname" #fname="ngModel" maxlength="10" [ngModel]="signin_firstname"></ion-input>
+              </ion-item>
+              <p *ngIf="fname.errors && fname.dirty" style="color: red; font-size: 12px;">This field is required!</p>
+            </ion-col>
+            <ion-col>
+              <ion-item lines="full">
+                <ion-label position="floating">Last Name</ion-label>
+                <ion-input type="text" required="required" name="signin_lastname" maxlength="10"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="Email" required="required" name="signin_email" #email="ngModel" [ngModel]="signin_email"></ion-input>
+        </ion-item>
+        <p *ngIf="email.errors && email.dirty" style="color: red; font-size: 12px;">This field is required!</p>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Phone</ion-label>
+          <ion-input type="number" required="required" name="signin_phone" #phone="ngModel" [ngModel]="signin_phone"></ion-input>
+        </ion-item>
+        <p *ngIf="phone.errors && phone.dirty" style="color: red; font-size: 12px;">This field is required!</p>
+    
+        <ion-item lines="full">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" required="required" name="signin_password" #password="ngModel" minlength="5" maxlength="12" [ngModel]="signin_password"></ion-input>
+        </ion-item>
+        <p *ngIf="password.errors && password.dirty" style="color: red; font-size: 12px;">Password between 5 to 12 charcters!</p>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Confirm-Password</ion-label>
+          <ion-input type="password" required="required" name="signin-confirmpassword" #confirmpassword="ngModel" minlength="5" maxlength="12" [ngModel]="signin_confirmpassword"></ion-input>
+        </ion-item>
+        <p *ngIf="confirmpassword.errors && confirmpassword.dirty" style="color: red; font-size: 12px;">Password between 5 to 12 charcters!</p>
+        <br>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" color="danger" expand="block" (click) = "signinForm(form)" [disabled] = "!form.valid" [routerLink]="'../menu-page/'">Sign In</ion-button>
+          </ion-col>
+        </ion-row>
+        <br>
+        <div style="text-align: center;">
+          --------------------OR--------------------
+          <div>
+            <br>
+            <span>
+              <a href="https://www.google.com/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="icon LRpadding" style="height: 40px;">
+              </a>
+            </span>
+            <span>
+              <a href="https://www.facebook.com/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" class="icon LRpadding" style="height: 40px;">
+              </a>
+            </span>
+            <span>
+              <a href="https://x.com/">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" class="icon LRpadding" style="height: 40px;">
+              </a>
+            </span>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</ion-content>

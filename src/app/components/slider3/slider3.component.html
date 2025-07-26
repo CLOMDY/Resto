@@ -1,0 +1,10 @@
+<a href="../../dish-page/" style="text-decoration: none;">
+  <ion-card style="background-color: #fff;" *ngFor = "let data of alldata">
+    <img alt="Silhouette of mountains" src="{{data.image}}" />
+    <ion-card-header>
+      <div style="color: #6d5f5f;">{{data.subtitle}}</div>
+      <ion-card-subtitle style="font-size: 19px; color: #000000;">{{data.title}}</ion-card-subtitle>
+      <ion-card-title style="font-size: 17px; color: rgb(140, 143, 145);">₹ {{data.price}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</a>

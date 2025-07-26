@@ -1,0 +1,15 @@
+<swiper-container style="color: #ffffff; margin: 10px;" slides-per-view = 2.3>
+  <swiper-slide style="border-radius: 20px;" *ngFor = "let data of allcatdata">
+    <div style=" background-color: {{data.bgcolor}}; border-radius: 20px; margin: 5px; height: 160px;">
+      <div style="display: flex; justify-content: center;;">
+        <img src ="{{data.image}}" style="filter: brightness(0) invert(1); height: 80px; margin-top: 5px;" class="center">
+      </div>
+      <div style="display: flex; justify-content: center; margin: 10px; font-weight: bolder; font-size: 30px; margin-bottom: 0px;">
+        {{data.title}}
+      </div>
+      <div style="display: flex; justify-content: center;">
+        {{data.subtitle}}
+      </div>
+    </div>
+  </swiper-slide>
+</swiper-container>

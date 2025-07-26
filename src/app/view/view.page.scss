@@ -1,0 +1,62 @@
+ion-content::part(background) {
+    background: #ebebeb;
+  }
+
+  ion-toggle {
+    padding: 12px;
+  
+    --handle-width: 10px;
+    --handle-height: 15px;
+    --handle-max-height: auto;
+    --handle-spacing: 4px;
+  
+    contain: none;
+  }
+  
+  ion-toggle::part(track),
+  ion-toggle.toggle-checked::part(track) {
+    height: 8px;
+    width: 35px;
+  
+    background: #ddd;
+  
+    /* Required for iOS handle to overflow the height of the track */
+    overflow: visible;
+  }
+  
+  ion-toggle::part(handle) {
+    background: #aca5a5;
+  
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  
+  ion-toggle.toggle-checked1::part(handle) {
+    background: #95c34e;
+  }
+
+  ion-toggle.toggle-checked2::part(handle) {
+    background: #de0505;
+  }
+
+  .default {
+    border-color: #e7e7e7;
+    color: black;
+  }
+
+  .btn {
+    border: 1px solid rgb(157, 153, 153);
+    background-color: #ebebeb;
+    color: rgb(91, 84, 84);
+    padding: 7px 12px;
+    font-size: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+
+  .hr {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 355px;
+  }

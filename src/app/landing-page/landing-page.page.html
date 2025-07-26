@@ -1,0 +1,290 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&family=Lobster&family=Qwitcher+Grypen:wght@700&display=swap"
+    rel="stylesheet">
+
+<ion-content>
+    <span id="top"></span>
+    <div class="topDiv">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="6">
+                    <ion-row>
+                        <ion-col size="4" class="ion-text-end">
+                            <img src="../../assets/OIG.jpeg" style="border-radius: 1000px; height: 45px;">
+                        </ion-col>
+
+                        <ion-col style="font-size: larger; font-weight: bolder; padding-top: 17px;">
+                            Restaurant
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+
+                <ion-col style="padding-top: 17px;" class="ion-text-end">
+                    <a href="../sign-page/">
+                        <button>
+                            Sign-in
+                        </button>
+                    </a>
+                    <a href="../login-page/">
+                        <button style="margin-left: 5px;">
+                            log-in
+                        </button>
+                    </a>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <img src="../../assets/tabel.gif" style="position: fixed; margin-top: 79px; height: 588px; width: 375px;">
+
+    <div style="margin-top: 88px;">
+        <ion-grid>
+            <ion-row>
+                <ion-col class="ourView">
+                    <div class="popular">
+                        OUR LOCATION
+                    </div>
+                    <swiper-container [loop]="true" [speed]="1000" [autoplay]="{enable:true,delay:1000}">
+                        <swiper-slide>
+                            <img src="../../assets/patna.jpg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/bangalore.webp" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/mumbai.jpg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/hyderabad.jpeg" class="slideCss" style="width: 100%;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/delhi.webp" class="slideCss">
+                        </swiper-slide>
+                    </swiper-container>
+                    <div class="name">
+                        <swiper-container [loop]="true" [speed]="1000"
+                            [autoplay]="{enable:true,delay:1000,reverseDirection:true}">
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    PATNA
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    DELHI
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    HYDERABAD
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    MUMBAI
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    BANGALORE
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col class="ourView">
+                    <div class="popular">
+                        OUR VIEW
+                    </div>
+                    <swiper-container [loop]="true" [speed]="1000" [autoplay]="{enable:true,delay:1000}">
+                        <swiper-slide>
+                            <img src="../../assets/view 1.webp" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/view 2.webp" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/view 3.webp" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/view 4.webp" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/view 5.webp" class="slideCss">
+                        </swiper-slide>
+                    </swiper-container>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col class="knowYourChef">
+                    KNOW YOUR CHEF
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col class="chef">
+                    <swiper-container [loop]="true" [speed]="1000"
+                        [autoplay]="{enable:true,delay:1000,reverseDirection:true}">
+                        <swiper-slide>
+                            <img src="../../assets/chef 1.png">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/chef 3.png">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/chef 2.png">
+                        </swiper-slide>
+                    </swiper-container>
+                </ion-col>
+
+                <ion-col class="chefInfo">
+                    <swiper-container [loop]="true" [speed]="1000" [autoplay]="{enable:true, delay:1000}">
+                        <swiper-slide>
+                            <b>Gordon</b>
+                            <div class="hr"></div>
+                            Butcher<div class="hr"></div>
+                            6yr<div class="hr"></div>
+                            <i>Rack of Lamb</i>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <b>Rachael Ray</b>
+                            <div class="hr"></div>
+                            Grill<div class="hr"></div>
+                            4yr<div class="hr"></div>
+                            <i>Chicken Chili</i>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <b>Jamie Oliver</b>
+                            <div class="hr"></div>
+                            Sauté<div class="hr"></div>
+                            10yr<div class="hr"></div>
+                            <i>Steak Sarnie</i>
+                        </swiper-slide>
+                    </swiper-container>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col class="ourView">
+                    <div class="popular">
+                        POPULAR DISHES
+                    </div>
+                    <swiper-container [loop]="true" [speed]="1000" [autoplay]="{enable:true,delay:1000}">
+                        <swiper-slide>
+                            <img src="../../assets/chicken.jpg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/patty.jpeg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/fish.jpeg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/thali.jpg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/burger.jpeg" class="slideCss">
+                        </swiper-slide>
+                    </swiper-container>
+                    <div class="name">
+                        <swiper-container [loop]="true" [speed]="1000"
+                            [autoplay]="{enable:true,delay:1000,reverseDirection:true}">
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    CHICKEN
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    BURGER
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    THALI
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    FISH
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    PATTY
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col class="ourView">
+                    <div class="popular">
+                        POPULAR DRINKS
+                    </div>
+                    <swiper-container [loop]="true" [speed]="1000" [autoplay]="{enable:true,delay:1000}">
+                        <swiper-slide>
+                            <img src="../../assets/alcohol.jpg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/shake.webp" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/lemonade.jpg" class="slideCss">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/cold.jpeg" class="slideCss" style="width: 100%;">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="../../assets/coffee.webp" class="slideCss">
+                        </swiper-slide>
+                    </swiper-container>
+                    <div class="name">
+                        <swiper-container [loop]="true" [speed]="1000"
+                            [autoplay]="{enable:true,delay:1000,reverseDirection:true}">
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    ALCOHOL
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    COFFEE
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    COLD DRINK
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    LEMONADE
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="popularDishName">
+                                    SHAKE
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row  (click)="scrollToTop()" style="color: black; text-decoration: none; cursor: pointer;">
+                <ion-col class="return">
+                        &#11145;
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <img src="../../assets/ionic.gif" style="mix-blend-mode: multiply; z-index: 3;">
+</ion-content>
